@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { DashboardLayout } from "@/components/Dashboard/DashboardLayout";
+import { Header } from "@/components/Dashboard/Header";
+import { SalesChart } from "@/components/Dashboard/SalesChart";
+import { CustomerSegmentation } from "@/components/Dashboard/CustomerSegmentation";
+import { MarketBasketAnalysis } from "@/components/Dashboard/MarketBasketAnalysis";
+import { PurchasePatterns } from "@/components/Dashboard/PurchasePatterns";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <DashboardLayout>
+      <Header />
+      
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div className="lg:col-span-2">
+          <SalesChart />
+        </div>
+        <div>
+          <CustomerSegmentation />
+        </div>
       </div>
-    </div>
+      
+      <div className="mb-8">
+        <PurchasePatterns />
+      </div>
+      
+      <div>
+        <MarketBasketAnalysis />
+      </div>
+    </DashboardLayout>
   );
 };
 

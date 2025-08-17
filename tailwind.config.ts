@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				analytics: {
+					primary: 'hsl(var(--analytics-primary))',
+					secondary: 'hsl(var(--analytics-secondary))',
+					success: 'hsl(var(--analytics-success))',
+					warning: 'hsl(var(--analytics-warning))',
+					info: 'hsl(var(--analytics-info))',
+					chart1: 'hsl(var(--analytics-chart-1))',
+					chart2: 'hsl(var(--analytics-chart-2))',
+					chart3: 'hsl(var(--analytics-chart-3))',
+					chart4: 'hsl(var(--analytics-chart-4))',
+					chart5: 'hsl(var(--analytics-chart-5))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +74,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'glow': 'var(--shadow-glow)',
+				'card': 'var(--shadow-card)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
