@@ -68,7 +68,18 @@ export function PurchasePatterns() {
             {categoryData.map((category, index) => (
               <div key={category.category} className="flex items-center justify-between p-3 rounded-lg bg-secondary/30">
                 <div className="flex items-center gap-3">
-                  <div className={`w-3 h-3 rounded-full bg-analytics-chart-${(index % 5) + 1}`} />
+                <div 
+                    className="w-3 h-3 rounded-full" 
+                    style={{ 
+                      backgroundColor: [
+                        'hsl(var(--analytics-chart-1))',
+                        'hsl(var(--analytics-chart-2))',
+                        'hsl(var(--analytics-chart-3))',
+                        'hsl(var(--analytics-chart-4))',
+                        'hsl(var(--analytics-chart-5))'
+                      ][index % 5]
+                    }}
+                  />
                   <div>
                     <div className="font-medium text-foreground">{category.category}</div>
                     <div className="text-sm text-muted-foreground">{category.purchases} purchases</div>
