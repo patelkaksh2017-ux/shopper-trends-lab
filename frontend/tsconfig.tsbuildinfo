@@ -1,0 +1,1 @@
+{"root":["./src/env.d.ts","./src/main.tsx","./src/api/client.ts","./src/components/Layout.tsx","./src/pages/App.tsx","./src/pages/BasketPage.tsx","./src/pages/ChurnPage.tsx","./src/pages/EDAPage.tsx","./src/pages/ForecastPage.tsx","./src/pages/RFMPage.tsx","./src/pages/SegmentsPage.tsx","./src/pages/UploadPage.tsx"],"version":"5.9.2"}
